@@ -1,3 +1,11 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#dev-Avatar{
+    height: 300px;
+    width: 100%;
+    background-image:url(../images/devAvatar.png), url(../images/headerBack.avif);
+    background-repeat: no-repeat, repeat;
+    background-position: left , initial;
+    background-size: contain, cover;
 }
