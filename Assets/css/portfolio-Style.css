@@ -4,8 +4,35 @@
 #dev-Avatar{
     height: 300px;
     width: 100%;
-    background-image:url(../images/devAvatar.png), url(../images/headerBack.avif);
-    background-repeat: no-repeat, repeat;
-    background-position: left , initial;
+    background-image:url(../images/devAvatar.png), url(../images/backgroundP.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left , center;
     background-size: contain, cover;
+}
+.nav-list{
+    background: linear-gradient(rgb(26, 26, 222), rgb(3, 5, 33));
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-litem{
+    /* display: inline; */
+    list-style: none;
+    margin: 25px;
+}
+.nav-litem a{
+    text-decoration: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+.nav-litem a:hover{
+  background-color: rgb(69, 91, 119);
+}
+.nav-list :last-child {
+    max-width: 40px;
+    max-height: 30px;
+    justify-content: flex-end;
 }
