@@ -1,0 +1,40 @@
+.nav-list{
+  flex-direction: column;
+}
+#dev-Avatar h1{
+   margin-left: 55vw;
+}
+.work1 img{
+    clear: both;
+    display: block;
+}
+.work2 #focusimg{
+    clear: both;
+    display: block;
+}
+.contact{
+    width: 100%;
+}
+.contact::after{
+        content: "";
+        clear: both;
+        display: table;
+}
+.contact-form{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 15px;
+}
+.contact a img{
+    height: 50px;
+    width: 50px;
+    margin: 10px 20px 10px;
+    background-color: var(--color-scheme3);
+    border-radius: 1.4em;
+}
+footer{
+    bottom: 0px;
+}
+

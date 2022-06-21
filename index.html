@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets\css\portfolio-Style.css">
-    <link rel="stylesheet" media="screen and (max-device-width: 968px" href="#">
+    <link rel="stylesheet" media="screen and (max-width: 480px" href="./Assets/css/SM-Screen-Styling.css">
     <!-- changes CSS being used when screen is at 968px or less -->
     <title>Portfolio</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul class="nav-list">
+            <ul class="nav-list" id="top">
                 <li class="nav-litem"><a href="#about-head">About</a></li>
                 <li class="nav-litem"><a href="#work">Portfolio</a></li>
                 <li class="nav-litem"><a href="#contact-container">Contact</a></li>
             </ul>
         </nav>
-        <div id="dev-Avatar"><h1>Dev Name</h1></div>
+        <div id="dev-Avatar"><h1>Matthew Fiaschetti</h1></div>
     </header>
     <main>  
+        <!-- About me p -->
         <section class="about">
             <h2 id="about-head">About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -45,11 +46,11 @@
                   voluptate velit esse cillum dolore eu fugiat nulla pariatur
             </p>
         </section>
-        <!--project one shown must be larger or the "highlighted project" all projects must link to live application -->
+        <!--Image container for completed projects/links to them -->
         <h2 id="work-head">Previous Work</h2>
               <section class="work" id="work">
                 <a href="https://fiaschettima.github.io/Horiseon-challenge/" target="_blank" class="work2">
-                    <img src="./Assets/images/exfnishedproduct.png" alt="placeholder image" id="focusimg">
+                    <img src="./Assets/images/exfnishedproduct.png" alt="horiseon project example" id="focusimg">
                 </a>
                 <a href="#" class="work1">
                     <img src="./Assets/images/proj-placeholder.webp" alt="placeholder image">
@@ -61,7 +62,7 @@
                     <img src="./Assets/images/proj-placeholder.webp" alt="placeholder image">
                 </a>
         </section>
-        <!-- fill out a contact section with placeholder info maybe add links to github linkedinn .... try to find logos to use -->
+        <!-- contact form to send contact information -->
         <section class="contact-form">
             <h3>I'll reach out to you soon</h3>
             <form action="#">
@@ -84,18 +85,20 @@
                 <input type="submit" value="Submit">
             </form>
         </section>
+        <!-- container to hold social media links -->
         <section class="contact" id="contact-container">
             <h3>Follow My Work:</h3>
-            <a href="#"><img src="./Assets/images/5296501_linkedin_network_linkedin logo_icon.svg" alt="linkedin logo"></a>
-            <a href="#"><img src="./Assets/images/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="twitter logo"></a>
-            <a href="#"><img src="./Assets/images/5296765_camera_instagram_instagram logo_icon.svg" alt="instagram logo"></a>
-            <a href="#"><img src="./Assets/images/5365678_fb_facebook_facebook logo_icon.svg" alt="facebook logo"></a>
-            <a href="#"><img src="./Assets/images/iconmonstr-github-1.svg" alt="github logo"></a>
-            <a href="#"><img src="./Assets/images/4375133_logo_youtube_icon.svg" alt="youtube logo"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="./Assets/images/5296501_linkedin_network_linkedin logo_icon.svg" alt="linkedin logo"></a>
+            <a href="https://twitter.com/"><img src="./Assets/images/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="twitter logo"></a>
+            <a href="https://www.instagram.com/"><img src="./Assets/images/5296765_camera_instagram_instagram logo_icon.svg" alt="instagram logo"></a>
+            <a href="https://www.facebook.com/"><img src="./Assets/images/5365678_fb_facebook_facebook logo_icon.svg" alt="facebook logo"></a>
+            <a href="https://github.com/"><img src="./Assets/images/iconmonstr-github-1.svg" alt="github logo"></a>
+            <a href="https://www.youtube.com/"><img src="./Assets/images/4375133_logo_youtube_icon.svg" alt="youtube logo"></a>
         </section>
     </main>
+    <!-- simple footer -->
     <footer>
-        <a href="#dev-avatar"><h3>Thank You For Visiting Hope to hear from you Soon</h3></a>
+        <a href="#top" id="footer-heading"><h3>Thank You For Visiting Hope to hear from you Soon</h3></a>
     </footer>
 </body>
 </html>
