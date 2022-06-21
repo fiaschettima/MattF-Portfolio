@@ -4,13 +4,12 @@
 #dev-Avatar h1{
    margin-left: 55vw;
 }
-.work1 img{
-    clear: both;
-    display: block;
-}
+.work1 img,
 .work2 #focusimg{
     clear: both;
     display: block;
+    width: 100%;
+    margin-left: 2px;
 }
 .contact{
     width: 100%;
