@@ -11,11 +11,11 @@
 *::after{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /* scroll-behavior: smooth; */
     /* for some reason this is causing page to load and scroll down without any action */
 }
 html{
     background-color: var(--color-scheme2);
+    /* scroll-behavior: smooth; */
 }
 /* styling for nav list flex container */
 .nav-list{
@@ -93,7 +93,7 @@ html{
     }
 }
 /* completed works styling */
-.work-head{
+#work-head{
     background: linear-gradient(var(--color-scheme1), var(--color-scheme2));
     text-align: center;
     margin: 0;
@@ -105,7 +105,7 @@ html{
     justify-content: center;
     /* align-content: center; */
     gap: 10px;
-    width: 525px;
+    /* width: 525px; */
     margin: auto;
 }
 .image-anchor{
@@ -113,10 +113,10 @@ html{
     height: 350px;
     width: 49%;
     overflow: hidden;
-    /* object-fit: contain; */
+    /* object-fit: cover; */
 }
 .work-image{
-    /* object-fit: contain; */
+    object-fit: cover;
 }
 .work-container a:nth-of-type(1){
     flex-grow: 3;
