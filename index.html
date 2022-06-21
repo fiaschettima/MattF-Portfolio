@@ -46,8 +46,7 @@
             </p>
         </section>
         <!--project one shown must be larger or the "highlighted project" all projects must link to live application -->
-        <h2>Work</h2>
-
+        <h2 id="work-head">Previous Work</h2>
               <section class="work" id="work">
                 <a href="https://fiaschettima.github.io/Horiseon-challenge/" target="_blank" class="work2">
                     <img src="./Assets/images/exfnishedproduct.png" alt="placeholder image" id="focusimg">
@@ -63,16 +62,8 @@
                 </a>
         </section>
         <!-- fill out a contact section with placeholder info maybe add links to github linkedinn .... try to find logos to use -->
-        <section class="contact" id="contact-container">
-            <h3>Get in Touch with me:</h3>
-            <a href="#"><img src="./Assets/images/5296501_linkedin_network_linkedin logo_icon.svg" alt="linkedin logo"></a>
-            <a href="#"><img src="./Assets/images/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="twitter logo"></a>
-            <a href="#"><img src="./Assets/images/5296765_camera_instagram_instagram logo_icon.svg" alt="instagram logo"></a>
-            <a href="#"><img src="./Assets/images/5365678_fb_facebook_facebook logo_icon.svg" alt="facebook logo"></a>
-            <a href="#"><img src="./Assets/images/iconmonstr-github-1.svg" alt="github logo"></a>
-            <a href="#"><img src="./Assets/images/4375133_logo_youtube_icon.svg" alt="youtube logo"></a>
-        </section>
         <section class="contact-form">
+            <h3>I'll reach out to you soon</h3>
             <form action="#">
                 <label for="client-name">Full Name</label>
                 <input type="text" id="client-name" placeholder="John Snow">
@@ -80,19 +71,31 @@
                 <input type="tel" id="client-phone" maxlength="12" placeholder="555-555-5555"> 
                 <label for="client-email">Email</label>
                 <input type="email" id="client-email" placeholder="johnsnow1@gmail.com">
-                <div>
+                <div class="pref-cont">
                     <legend>Choose Preferred Contact Method</legend>
-                    <input type="checkbox" value="Email" id="pref-email">
-                    <label for="pref-email">Email</label>
-                    <input type="checkbox" value="Phone" id="pref-tel">
-                    <label for="pref-tel">phone</label>
+                    <label for="pref-email" class="radio-label">Email</label>
+                    <input type="radio" value="Email" id="pref-email" name="method-answer">
+                    <label for="pref-tel" class="radio-label">phone</label>
+                    <input type="radio" value="Phone" id="pref-tel" name="method-answer">
+                    
                 </div>
-                <input type="text" placeholder="Tell me how I can help here....">
+                <label for="client-topic">Project Information</label>
+                <textarea placeholder="Tell me how I can help here...." id="client-descr" name="client-topic"></textarea>
+                <input type="submit" value="Submit">
             </form>
+        </section>
+        <section class="contact" id="contact-container">
+            <h3>Follow My Work:</h3>
+            <a href="#"><img src="./Assets/images/5296501_linkedin_network_linkedin logo_icon.svg" alt="linkedin logo"></a>
+            <a href="#"><img src="./Assets/images/5296514_bird_tweet_twitter_twitter logo_icon.svg" alt="twitter logo"></a>
+            <a href="#"><img src="./Assets/images/5296765_camera_instagram_instagram logo_icon.svg" alt="instagram logo"></a>
+            <a href="#"><img src="./Assets/images/5365678_fb_facebook_facebook logo_icon.svg" alt="facebook logo"></a>
+            <a href="#"><img src="./Assets/images/iconmonstr-github-1.svg" alt="github logo"></a>
+            <a href="#"><img src="./Assets/images/4375133_logo_youtube_icon.svg" alt="youtube logo"></a>
         </section>
     </main>
     <footer>
-
+        <a href="#dev-avatar"><h3>Thank You For Visiting Hope to hear from you Soon</h3></a>
     </footer>
 </body>
 </html>

@@ -1,19 +1,24 @@
 :root{
-    color-scheme1: #b0dde4;
-    color-scheme2: #286fb4;
-    color-scheme3: #FFFFFF;
-    color-scheme4: #DF4C73;
-    color-scheme5: rgb(168, 216, 218);
+    --color-scheme1: #b0dde4;
+    --color-scheme2: #286fb4;
+    --color-scheme3: #FFFFFF;
+    --color-scheme4: #DF4C73;
+    --color-scheme5: #97dde7;
 
 }
-*{
+*,
+*::before,
+*::after{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     /* scroll-behavior: smooth; */
     /* for some reason this is causing page to load and scroll down without any action */
 }
+html{
+    background-color: var(--color-scheme2);
+}
 .nav-list{
-    background: linear-gradient(rgb(26, 26, 222), rgb(3, 5, 33));
+    background: linear-gradient(var(--color-scheme2), var(--color-scheme5));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,8 +41,8 @@
     border: 1px solid rgba(0,0,0,0.0);
 }
 .nav-litem a:hover{
-    border: 1px solid rgba(255,255,255,0.84);
-    box-shadow: 5px 3px 5px red;
+    border: 1px solid var(--color-scheme3);
+    box-shadow: 5px 3px 5px var(--color-scheme4);
 }
 #dev-Avatar{
     height: 300px;
@@ -46,7 +51,7 @@
     background-repeat: no-repeat, no-repeat;
     background-position: left , center;
     background-size: contain, cover;
-    color: white;
+    color: var(--color-scheme3);
 }
 #dev-Avatar h1{
     position: absolute;
@@ -54,11 +59,13 @@
     margin-top: 30px;
 }
 .about{
-    color: #DF4C73;
-    background-color: #b0dde4;
-    border: 5px solid #286fb4;
+    color: var(--color-scheme4);
+    background-color: var(--color-scheme1);
     display: flex;
     flex-wrap: nowrap;
+}
+.about p{
+    color:black;
 }
 .about :first-child{
     animation: 4s ease-out 0s 1 fadein;
@@ -79,13 +86,20 @@
         opacity: 100%;
     }
 }
+#work-head{
+    text-align: center;
+    background: linear-gradient(var(--color-scheme1),var(--color-scheme2));
+    margin: 0;
+    padding: 15px;
+}
 .work::after{
     content: "";
     clear: both;
     display: table;
 }
 .work{
-    border: 1px solid black;
+    background-color: var(--color-scheme2);
+    padding-bottom: 15px;
 }
 .work1 img{
     float: left;
@@ -93,7 +107,7 @@
     padding: 5px;
     height: 200px;
     object-fit: fill;
-    /* margin: auto; */
+    border: 1px solid var(--color-scheme3);
 }
 .work2 #focusimg{
     float: left;
@@ -102,19 +116,76 @@
     height: 600px;
     width: 50vw;
     object-fit: contain;
-    margin: auto;
+    margin-left: 25px;
+    border: 1px solid var(--color-scheme3);
 }
 /* add media screen width 100% for images */
-.contact{
-    /* border: 1px solid black; */
-    width: 235px;
-}
 .contact a img{
     height: 75px;
     width: 75px;
     margin: 10px 20px 10px;
-    float: left;
+    background-color: var(--color-scheme3);
+    border-radius: 1em;
 }
 /* .contact::after{
     clear:both;
 } */
+.contact-form{
+    width: 49%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-left: 15px;
+}
+/* at media screen for phones display block to push icons below */
+.contact{
+    width: 49%;
+    float: right;
+}
+.radio-label{
+    margin: 5px 20px 10px;
+}
+.pref-cont{
+    margin-bottom: 15px;
+}
+input[type=text], 
+input[type=email],
+input[type=tel]{
+    width: 66.666%;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 1em;
+}
+input[type=submit]{
+    background-color: var(--color-scheme1);
+    color: var(--color-scheme4);
+    padding: 5px 10px 5px;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+input[type=submit]:hover{
+    background-color: var(--color-scheme5);
+    box-shadow: 3px 3px var(--color-scheme4);
+    cursor: crosshair;
+}
+input:focus{
+    box-shadow: 5px 6px 5px var(--color-scheme4);
+    border: none;
+}
+textarea{
+    height: 150px;
+    width: 100%;
+}
+footer,
+a{
+    height: 200px;
+    background: linear-gradient(var(--color-scheme2),var(--color-scheme1));
+    color: var(--color-scheme3);
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: none;
+    padding-top: 1em;
+}
