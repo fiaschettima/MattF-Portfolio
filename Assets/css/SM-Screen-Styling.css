@@ -1,16 +1,19 @@
-.nav-list{
+.nav-list,
+.about{
   flex-direction: column;
 }
 #dev-Avatar h1{
    margin-left: 55vw;
 }
-.work1 img,
-.work2 #focusimg{
-    clear: both;
-    display: block;
+.work-container{
+    flex-direction: column;
     width: 100%;
-    margin-left: 2px;
 }
+.work-container a:nth-of-type(1){
+    flex-grow: 2;
+    width: 100%;
+}
+.image-anchor,
 .contact{
     width: 100%;
 }

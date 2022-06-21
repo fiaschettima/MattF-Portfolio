@@ -93,39 +93,36 @@ html{
     }
 }
 /* completed works styling */
-#work-head{
+.work-head{
+    background: linear-gradient(var(--color-scheme1), var(--color-scheme2));
     text-align: center;
-    background: linear-gradient(var(--color-scheme1),var(--color-scheme2));
     margin: 0;
-    padding: 15px;
+    padding: 20px;
 }
-.work{
-    background-color: var(--color-scheme2);
-    padding-bottom: 15px;
+.work-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-content: center; */
+    gap: 10px;
+    width: 525px;
+    margin: auto;
 }
-.work1 img{
-    float: left;
-    width: 40vw;
-    padding: 5px;
-    height: 200px;
-    object-fit: fill;
-    border: 1px solid var(--color-scheme3);
+.image-anchor{
+    border: 2px solid black;
+    height: 350px;
+    width: 49%;
+    overflow: hidden;
+    /* object-fit: contain; */
 }
-.work2 #focusimg{
-    float: left;
-    width: 50%;
-    padding: 5px;
-    height: 600px;
-    width: 50vw;
-    object-fit: cover;
-    margin-left: 25px;
-    border: 1px solid var(--color-scheme3);
+.work-image{
+    /* object-fit: contain; */
 }
-.work::after{
-    content: "";
-    clear: both;
-    display: table;
+.work-container a:nth-of-type(1){
+    flex-grow: 3;
+    width: 100%;
 }
+
 /* "clears' the float property */
 /* add media screen width 100% for images */
 
