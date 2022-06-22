@@ -103,7 +103,6 @@ html{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    /* align-content: center; */
     gap: 10px;
     width: 80vw;
     margin: auto;
@@ -113,7 +112,6 @@ html{
     height: 350px;
     width: 49%;
     overflow: hidden;
-    /* object-fit: cover; */
 }
 .work-image{
     width: 100%;
@@ -123,11 +121,7 @@ html{
     width: 100vw;
 }
 
-/* "clears' the float property */
-/* add media screen width 100% for images */
-
-/* at media screen for phones display block to push icons below */
-/* below provied styling for the form */
+/* below provied stylig for the form */
 .contact-form{
     width: 50%;
     margin-right: 0;
@@ -181,6 +175,7 @@ textarea{
     background-color: var(--color-scheme3);
     border-radius: 1.4em;
 }
+/* footer --------------------------------------------------------------- */
 footer,
 #footer-heading{
     background: linear-gradient(var(--color-scheme2),var(--color-scheme1));
