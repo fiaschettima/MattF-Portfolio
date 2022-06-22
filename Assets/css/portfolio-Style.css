@@ -105,7 +105,7 @@ html{
     justify-content: center;
     /* align-content: center; */
     gap: 10px;
-    /* width: 525px; */
+    width: 80vw;
     margin: auto;
 }
 .image-anchor{
@@ -116,11 +116,11 @@ html{
     /* object-fit: cover; */
 }
 .work-image{
-    object-fit: cover;
+    width: 100%;
 }
 .work-container a:nth-of-type(1){
     flex-grow: 3;
-    width: 100%;
+    width: 100vw;
 }
 
 /* "clears' the float property */
@@ -131,9 +131,7 @@ html{
 .contact-form{
     width: 50%;
     margin-right: 0;
-    margin-bottom: 20px;
-    display: inline-block;
-    margin-left: 15px;
+    margin:auto;
 }
 .radio-label{
     margin: 5px 20px 10px;
@@ -176,10 +174,6 @@ textarea{
 }
 /* form styling ^^^ */
 /* sets social media icons */
-.contact{
-    /* width: 50%; */
-    /* float: right; */
-}
 .contact a img{
     height: 75px;
     width: 75px;
@@ -197,4 +191,10 @@ footer,
     padding-top: 1em;
     text-decoration: none;
     padding-bottom: 12px;
+}
+/* ========================================================================= */
+@media screen and (max-width: 624px){
+    .image-anchor{
+        width: 100%;
+    }
 }
