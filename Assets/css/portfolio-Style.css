@@ -11,11 +11,12 @@
 *::after{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /* for some reason this is causing page to load and scroll down without any action */
+    
 }
 html{
     background-color: var(--color-scheme2);
     /* scroll-behavior: smooth; */
+    /* for some reason this is causing page to load and scroll down without any action */
 }
 /* styling for nav list flex container */
 .nav-list{
